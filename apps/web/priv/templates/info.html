@@ -1,0 +1,63 @@
+<html>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<link href='/static/synrc.css' type='text/css' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>{{title}}</title>
+</head>
+
+<body>
+	<div>{{info}}</div>
+	{{body}}
+	<script type="text/javascript">
+		// Get the input field
+		var input = document.getElementById("body");
+        var button = document.getElementById("submit")
+
+		// Execute a function when the user releases a key on the keyboard
+		input.addEventListener("keyup", function(event) {
+			// Cancel the default action, if needed
+			// ws.send(enc(tuple(atom('client'), tuple(atom('phone_auth'),bin("+380..")))));
+			// ws.send(enc(tuple(atom('client'), tuple(atom('phone_auth'), bin(input.value)))));
+
+			event.preventDefault();
+			// Number 13 is the "Enter" key on the keyboard
+			if (event.keyCode === 13) {
+				// Trigger the button element with a click
+                simulateClick(button);
+                setTimeout(function () {
+                    input.value = '';
+                });
+				// ws.send(enc(tuple(atom('init'), tuple(atom('text'), bin(input.value)))));
+				//ws.send(enc(tuple(atom('direct'),
+				//    tuple(atom('init'), tuple(atom('text'), bin(input.value)))
+				//)));
+				//ws.send(enc(tuple(atom('direct'),
+				//    tuple(atom('init'), tuple(atom(input.value)))
+				//)));
+			}
+		});
+
+		function simulateClick(control) {
+			if (document.all) {
+				control.click();
+			} else {
+				var evObj = document.createEvent('MouseEvents');
+				evObj.initMouseEvent('click', true, true, window, 1, 12, 345, 7, 220, false, false, true, false, 0, null);
+				control.dispatchEvent(evObj);
+			}
+		}
+	</script>
+	<!--script>var transition = {pid: '', host: 'localhost', port:'8000'};</script-->
+	<script>
+    {{script}}
+	</script>
+	{{javascript}}
+	<script>
+		protos = [$bert];
+		N2O_start();
+	</script>
+</body>
+
+</html>

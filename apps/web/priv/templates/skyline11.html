@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/static/skyline.css">
+	<link rel="stylesheet" href="/static/skyline-custom.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="header-bg">
+		<nav class="navbar is-transparent" id="main-nav">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/skyline"><b>Skyline Circle</b></a>
+				<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div id="navbarExampleTransparentExample" class="navbar-menu has-shadow">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="/documentation/overview/start/">Admin</a>
+						<div class="navbar-dropdown is-boxed">
+							<a class="navbar-item" href="/documentation/overview/start/">Übersicht</a>
+							<a class="navbar-item" href="/documentation/overview/start/">Alle Kunden</a>
+							<a class="navbar-item" href="/documentation/overview/start/"><span class="icon"><i class="fas fa-plus"></i></span>Neues Konto</a>
+							<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">Alle Dateien</a>
+							<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/"><span class="icon"><i class="fas fa-plus"></i></span>Neue Datei</a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="/documentation/overview/start/">Dateien</a>
+						<div class="navbar-dropdown is-boxed">
+							<a class="navbar-item" href="/documentation/overview/start/">Übersicht</a>
+							<a class="navbar-item" href="/documentation/overview/start/">Marketing Material</a>
+							<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">Videos</a>
+						</div>
+					</div>
+					<div class="navbar-item">
+						<div class="control has-icons-left has-icons-right"><input class="input" type="search" placeholder="Suchen"><span class="icon is-small is-left"><i class="fas fa-search"></i></span></div>
+					</div>
+				</div>
+
+				<div class="navbar-end">
+					<a class="navbar-item" href="/skyline">Mein Konto</a>
+					<div class="navbar-item">
+						<div class="field is-grouped">
+							<p class="control">
+								<a class="button is-light" href="/logout"><span class="icon has-text-grey-light"><i class="fas fa-sign-out-alt"></i></span><span>Ausloggen</span></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="hero is-link" id="">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-vcentered">
+						<div class="column">
+							<p class="title">
+								Admin - Neues Konto anlegen
+							</p>
+							<!--<p class="subtitle">
+								Everything you need to <strong>create a website</strong> with Bulma
+							</p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hero-foot">
+				<div class="container">
+					<nav class="tabs is-boxed">
+						<ul>
+							<li>
+								<a href="/skyline">Übersicht</a>
+							</li>
+							<li class="is-active">
+								<a href="https://bulma.io/documentation/layout/container/">Kunden</a>
+							</li>
+							<li>
+								<a href="https://bulma.io/documentation/modifiers/syntax">Dateien</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</section>
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-tabs">
+				<a class="navbar-item is-tab" href="https://bulma.io/documentation/elements/box/">Alle</a>
+				<a class="navbar-item is-tab is-active" href="https://bulma.io/documentation/elements/box/">Neues Konto anlegen</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="is-fancy is-fullheight hero">
+		<div class="container row-space-top-7">
+			<div class="box is-medium-box row-inner-6" style="margin: 0 auto;">
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Firma</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Firma">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Vorname</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Vorname">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Nachname</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Nachname">
+						</div>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column">
+						<div class="row-space-5">
+							<div class="field">
+								<label class="label">Straße</label>
+								<div class="control">
+									<input class="input is-medium" type="text" placeholder="Straße">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column is-one-quarter">
+						<div class="row-space-5">
+							<div class="field">
+								<label class="label">Hausnummer</label>
+								<div class="control">
+									<input class="input is-medium" type="text" placeholder="Hausnummer">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">PLZ</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="PLZ">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Ort</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Ort">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Email</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Email">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Passwort</label>
+						<div class="control">
+							<input class="input is-medium" type="text" placeholder="Passwort">
+						</div>
+					</div>
+				</div>
+
+				<div class="row-space-5">
+					<div class="field">
+						<label class="label">Logo</label>
+						<div class="control">
+							<div class="file has-name is-boxed is-fullwidth">
+							  <label class="file-label">
+							    <input class="file-input" type="file" name="resume">
+							    <span class="file-cta">
+							      <span class="file-icon is-size-3">
+							        <i class="fas fa-upload"></i>
+							      </span>
+							      <p class="file-label is-fullwidth center">
+							        Datei auswählen...
+								</p>
+							    </span>
+							    <span class="file-name has-text-grey-light">
+							      Screen Shot 2017-07-29 at 15.54.25.png
+							    </span>
+							  </label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="field is-grouped">
+					<div class="control">
+						<button class="button is-medium is-link">Änderungen speichern</button>
+					</div>
+					<div class="control">
+						<button class="button is-text">Abbrechen</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		{{body}}
+	</div>
+
+
+	<script>{{script}}</script>
+	{{javascript}}
+	<script>
+		protos = [$bert];
+		N2O_start();
+	</script>
+</body>
+
+</html>

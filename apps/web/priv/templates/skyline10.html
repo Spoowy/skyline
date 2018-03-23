@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/static/skyline.css">
+	<link rel="stylesheet" href="/static/skyline-custom.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div id="header-bg">
+		<nav class="navbar is-transparent" id="main-nav">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/skyline"><b>Skyline Circle</b></a>
+				<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div id="navbarExampleTransparentExample" class="navbar-menu has-shadow">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link" href="/documentation/overview/start/">Dateien</a>
+						<div class="navbar-dropdown is-boxed">
+							<a class="navbar-item" href="/documentation/overview/start/">Übersicht</a>
+							<a class="navbar-item" href="/documentation/overview/start/">Marketing Material</a>
+							<a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">Videos</a>
+						</div>
+					</div>
+					<div class="navbar-item">
+						<div class="control has-icons-left has-icons-right"><input class="input" type="search" placeholder="Suchen"><span class="icon is-small is-left"><i class="fas fa-search"></i></span></div>
+					</div>
+				</div>
+
+				<div class="navbar-end">
+					<a class="navbar-item" href="/skyline">Mein Konto</a>
+					<div class="navbar-item">
+						<div class="field is-grouped">
+							<p class="control">
+								<a class="button is-light" href="/logout"><span class="icon has-text-grey-light"><i class="fas fa-sign-out-alt"></i></span><span>Ausloggen</span></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="hero is-link" id="">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-vcentered">
+						<div class="column">
+							<p class="title">
+								Suchergebnisse für <b>"John"</b>
+							</p>
+							<!--<p class="subtitle">
+								Everything you need to <strong>create a website</strong> with Bulma
+							</p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hero-foot">
+				<div class="container">
+					<nav class="tabs is-boxed">
+						<ul>
+							<li>
+								<a href="/skyline">Übersicht</a>
+							</li>
+							<li>
+								<a href="https://bulma.io/documentation/layout/container/">Marketing Material</a>
+							</li>
+							<li>
+								<a href="https://bulma.io/documentation/modifiers/syntax">Videos</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<div class="is-fancy is-fullheight hero">
+		<div class="container is-fluid row-outer-7">
+			<div class="columns is-multiline is-desktop">
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<span class="tag is-dark">Video</span>&nbsp;&nbsp;<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1490426951762-7df2e77e568a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5519e2265996c14edbae39603026a40c&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<span class="tag is-link">Bild</span>&nbsp;&nbsp;<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1515697203610-d0513edf9cb4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd428e7688e714f6c98429dc1c18a31f&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<span class="tag is-success">PDF</span>&nbsp;&nbsp;<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e044488fe252577b2788a6ded2b4c993&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<span class="tag is-danger">PSD</span>&nbsp;&nbsp;<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1429593886847-3cc52983f919?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24203c3be0b7ab123fa19e4243798aa5&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1430418372158-66adfd0d88cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a074583d6ecf670af630fa2a15bc82ef&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1465588042420-47a53c2d0320?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a92c4e3580094ddd156079701920b260&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1518288842489-ca800cf5d3f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31fa48029e5878affbb5d1f241442b4b&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1472152083436-a6eede6efad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a52890683599a39bd5b99b0487c642dc&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+									<button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+									  <span class="icon is-small">
+										<i class="fas fa-angle-down" aria-hidden="true"></i>
+									  </span>
+									</button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+									<div class="dropdown-content">
+									  <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1502489597346-dad15683d4c2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f29821f5879298e610bc036a9a77ae8&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+									<button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+									  <span class="icon is-small">
+										<i class="fas fa-angle-down" aria-hidden="true"></i>
+									  </span>
+									</button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+									<div class="dropdown-content">
+									  <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1515952918693-6f9f6055a470?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b75e5814f2da51ce9c00a28b82d11d55&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+									<button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+									  <span class="icon is-small">
+										<i class="fas fa-angle-down" aria-hidden="true"></i>
+									  </span>
+									</button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+									<div class="dropdown-content">
+									  <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1469053913977-1d2f009670d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1bf94ecf1c61e009f7b39d8377d8e1b8&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+									<button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+									  <span class="icon is-small">
+										<i class="fas fa-angle-down" aria-hidden="true"></i>
+									  </span>
+									</button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+									<div class="dropdown-content">
+									  <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1478001517127-fccc92f54906?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63597be27c598539afd0becc211be037&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1516575150278-77136aed6920?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=14eff606e925526770576a492f6ef985&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1509994117234-e4819152f2d5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f987cd651b3f5dac2d14f2ffcc17d53&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1485809361096-4ccabbaad61e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36e99aeb1ce6bad96870f135ea946fbb&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1491193348662-47874a96c621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bec5be982f299e6ba8840b4ae9f80cfd&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1518973599587-370cea74a58a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a8e3737d10daccfb1374244f3968b39e&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1493552455602-9e1034d231c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec61414743d5aa4f307600f3ae806d9c&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1516483217304-71978ef2bbcc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f8ffe65e4632cc698cc0f70014ea70d1&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+					<div class="box is-media-box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<strong>John Smith</strong>
+									</p>
+								</div>
+							</div>
+							<div class="media-right">
+								<div class="dropdown is-right is-hoverable">
+								  <div class="dropdown-trigger">
+								    <button class="button row-inner-0 is-heightauto is-borderless" aria-haspopup="true" aria-controls="dropdown-menu4">
+								      <span class="icon is-small">
+								        <i class="fas fa-angle-down" aria-hidden="true"></i>
+								      </span>
+								    </button>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+										  <a href="#" class="is-link"><span class="icon"><i class="fas fa-download"></i></span> Download</a>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</article>
+						<div class="row-space-top-3">
+							<figure class="image is-4by3">
+							  <img src="https://images.unsplash.com/photo-1516203294340-5ba5f612dc6a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b79294f231ab4799218e82818a07de1&auto=format&fit=crop&w=640&h=480&q=60">
+							</figure>
+						</div>
+						<nav class="level is-mobile row-space-top-3">
+							<div class="level-left">
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-download"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-info"></i></span></a>
+								<a class="level-item"><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		{{body}}
+	</div>
+
+
+	<script>{{script}}</script>
+	{{javascript}}
+	<script>
+		protos = [$bert];
+		N2O_start();
+	</script>
+</body>
+
+</html>
