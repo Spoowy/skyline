@@ -3,8 +3,10 @@
 -include_lib("kvs/include/entry.hrl").
 -include_lib("nitro/include/nitro.hrl").
 -include_lib("n2o/include/wf.hrl").
+-include_lib("category.hrl").
 
 main() ->
+    #category{name=[<<"Facebook Post">>], handle=[<<"facebook_post">>]},
     HeaderNav = [#panel{class=["hero-foot"], body=[#panel{class=["container"], body=[#nav{class=["tabs", "is-boxed"], body=[#ul{body=[
         #li{class=["is-active"], body=[#link{href="/", body="&Uuml;bersicht"}]},
         #li{body=[#link{href="/media?s=marketing", body="Marketing Material"}]}

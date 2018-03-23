@@ -1,10 +1,10 @@
-
 -ifndef(SKYLINE_HRL).
 -define(SKYLINE_HRL, true).
 
 -include_lib("kvs/include/kvs.hrl").
 
 -record(category, {?ITERATOR(feed),
+					handle=[],
 					name=[]}).
 
 -record(media, {?ITERATOR(feed),
