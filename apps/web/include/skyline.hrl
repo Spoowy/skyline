@@ -16,11 +16,11 @@
 					date_created=[] }).
 
 -record(user_category_access, {?ITERATOR(feed),
-					user_id=[],
+					user=[],
 					categories=[] }).
 
 -record(user_download_log, {?ITERATOR(feed),
-					user_id=[],
+					user=[],
 					media_id=[],
 					date=[] }).
 -endif.
