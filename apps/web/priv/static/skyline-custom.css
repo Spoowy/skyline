@@ -466,3 +466,50 @@
 	background: #ffffff;
 	padding: 0 10px;
 }
+
+.inline-block {
+	display: inline-block !important;
+}
+
+.login .button {
+	height: 50px !important;
+}
+
+.google-button {
+	display: inline-block;
+}
+
+.avatar {
+	display: inline-block !important;
+	width: 48px;
+	height: 48px;
+	overflow: hidden;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-right: 10px !important;
+	height: 1.8em !important;
+	width: 1.8em !important;
+}
+
+.profile-button:hover {
+	background: none !important;
+}
+
+.profile-button span {
+	color: #4a4a4a !important;
+}
+
+.profile-button:hover span {
+	color: #3273dc !important;
+}

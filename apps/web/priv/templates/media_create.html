@@ -11,22 +11,7 @@
 
 				<div class="row-space-left-5 row-space-5 row-space-top-3">
 					<div class="row-space-3">
-						<div class="file has-name is-boxed is-fullwidth">
-						  <label class="file-label">
-						    <input class="file-input" type="file" name="resume">
-						    <span class="file-cta">
-						      <span class="file-icon is-size-3">
-						        <i class="fas fa-upload"></i>
-						      </span>
-						      <p class="file-label is-fullwidth center">
-						        Datei auswählen...
-							</p>
-						    </span>
-						    <span class="file-name has-text-grey-light">
-						      Screen Shot 2017-07-29 at 15.54.25.png
-						    </span>
-						  </label>
-						</div>
+						<span id="upload"></span>
 					</div>
 
 					<div class="is-horizontal-divider">
@@ -35,33 +20,29 @@
 
 					<div class="">
 						<div class="field">
-							<div class="control">
+							<div class="control" id="mediumUrl">
 								<input class="input is-medium" type="text" placeholder="Link">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="row-space-5">
+				<!-- vorschau -->
+				<label class="label">Vorschau-Bild</label>
+				<div class="row-space-left-5 row-space-5 row-space-top-3">
 					<div class="field">
-						<label class="label">Vorschau-Bild</label>
-						<div class="control">
-							<div>
-								<div class="file has-name is-boxed is-fullwidth">
-								  <label class="file-label">
-								    <input class="file-input" type="file" name="resume">
-								    <span class="file-cta">
-								      <span class="file-icon is-size-3">
-								        <i class="fas fa-upload"></i>
-								      </span>
-								      <p class="file-label is-fullwidth center">
-								        Datei auswählen...
-									</p>
-								    </span>
-								    <span class="file-name has-text-grey-light">
-								      Screen Shot 2017-07-29 at 15.54.25.png
-								    </span>
-								  </label>
+						<div class="row-space-3">
+							<span id="upload2"></span>
+						</div>
+
+						<div class="is-horizontal-divider">
+							<span>oder</span>
+						</div>
+
+						<div class="">
+							<div class="field">
+								<div class="control" id="previewUrl">
+									<input class="input is-medium" type="text" placeholder="Link">
 								</div>
 							</div>
 						</div>

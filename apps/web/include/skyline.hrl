@@ -17,7 +17,7 @@
 
 -record(user_category_access, {?ITERATOR(feed),
 					user=[],
-					categories=[] }).
+					category=[] }).
 
 -record(user_download_log, {?ITERATOR(feed),
 					user=[],

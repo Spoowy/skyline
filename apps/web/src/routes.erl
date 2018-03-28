@@ -29,11 +29,11 @@ route(<<"admin/media/create",_/binary>>) -> media_create;
 route(<<"admin/customers/create",_/binary>>) -> customer_create;
 %route(<<"static/spa/index",_/binary>>) -> index;
 %route(<<"static/spa/login",_/binary>>) -> login;
-%route(<<"login",_/binary>>) -> login;
-%route(<<"interlogin",_/binary>>) -> interlogin;
+route(<<"login",_/binary>>) -> interlogin;
+route(<<"interlogin",_/binary>>) -> interlogin;
 %route(<<"smoke",_/binary>>) -> smoke;
 %route(<<"formular",_/binary>>) -> formular;
 %route(<<"thread",_/binary>>) -> thread;
 %route(<<"text",_/binary>>) -> textview;
 %route(<<"skyline",_/binary>>) -> skyline;
-route(_) -> login.
+route(_) -> interlogin.
